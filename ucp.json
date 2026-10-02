@@ -1,5 +1,23 @@
 {
-  "ucp": { "version": "2026-08-25" },
+  "ucp": {
+    "version": "2026-08-25",
+    "services": [
+      {
+        "name": "dev.ucp.shopping",
+        "version": "2026-08-25",
+        "transport": "mcp",
+        "endpoint": "https://test-store-0206.myshopify.com/api/ucp/mcp"
+      }
+    ],
+    "capabilities": [
+      "dev.ucp.shopping.catalog.search",
+      "dev.ucp.shopping.catalog.lookup",
+      "dev.ucp.shopping.cart",
+      "dev.ucp.shopping.checkout",
+      "dev.ucp.shopping.order"
+    ]
+  },
   "name": "Test Agent",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "contact": "sad0206@wearehackerone.com"
 }
