@@ -1,21 +1,25 @@
 {
   "ucp": {
     "version": "2026-08-25",
-    "services": [
-      {
-        "name": "dev.ucp.shopping",
-        "version": "2026-08-25",
-        "transport": "mcp",
-        "endpoint": "https://test-store-0206.myshopify.com/api/ucp/mcp"
-      }
-    ],
+    "services": {
+      "dev.ucp.shopping": [
+        {
+          "version": "2026-08-25",
+          "spec": "https://ucp.dev/2026-08-25/specification/overview/",
+          "transport": "mcp",
+          "endpoint": "https://test-store-0206.myshopify.com/api/ucp/mcp",
+          "schema": "https://ucp.dev/2026-08-25/services/shopping/mcp.openrpc.json"
+        }
+      ]
+    },
     "capabilities": {
       "dev.ucp.shopping.catalog.search": [{ "version": "2026-08-25" }],
       "dev.ucp.shopping.catalog.lookup": [{ "version": "2026-08-25" }],
       "dev.ucp.shopping.cart": [{ "version": "2026-08-25" }],
       "dev.ucp.shopping.checkout": [{ "version": "2026-08-25" }],
       "dev.ucp.shopping.order": [{ "version": "2026-08-25" }]
-    }
+    },
+    "payment_handlers": {}
   },
   "name": "Test Agent",
   "version": "1.0.0",
