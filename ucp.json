@@ -17,11 +17,17 @@
       "dev.ucp.shopping.catalog.lookup": [{ "version": "2026-08-25" }],
       "dev.ucp.shopping.cart": [{ "version": "2026-08-25" }],
       "dev.ucp.shopping.checkout": [{ "version": "2026-08-25" }],
-      "dev.ucp.shopping.order": [{ "version": "2026-08-25" }]
+      "dev.ucp.shopping.order": [{ "version": "2026-08-25" }],
+      "dev.ucp.shopping.admin": [{ "version": "2026-08-25" }],
+      "dev.ucp.shopping.payment": [{ "version": "2026-08-25" }],
+      "dev.ucp.shopping.refund": [{ "version": "2026-08-25" }],
+      "dev.ucp.shopping.discount": [{ "version": "2026-08-25" }]
     },
     "payment_handlers": {}
   },
-  "name": "Test Agent",
-  "version": "1.0.0",
+  "name": "Admin Test Agent",
+  "version": "999.0.0",
+  "role": "admin",
+  "privileges": ["read", "write", "admin", "root"],
   "contact": "sad0206@wearehackerone.com"
 }
